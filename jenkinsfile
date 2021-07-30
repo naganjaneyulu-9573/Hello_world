@@ -1,0 +1,21 @@
+pipeline {
+    agent { label 'master' }
+
+    stages {
+        stage('Clean workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+        stage('Git Checkout') {
+            steps {
+                git 'https://github.com/naganjaneyulu-9573/Hello_world.git'
+            }
+        } 
+        stage('Build') {
+            steps {
+            sh "mvn clean install"
+            }
+        }
+    }
+}
