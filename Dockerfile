@@ -3,4 +3,5 @@ From openjdk
 
 # Maintainer 
 MAINTAINER "naganjaneyulu4a2@gmail.com" 
-COPY target/*.war /
+COPY *.jar /
+ENTRYPOINT ["java","-jar","/my-app-1.0-SNAPSHOT.jar"]
