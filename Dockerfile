@@ -1,7 +1,6 @@
 # Pull base image 
-FROM openjdk
+FROM tomcat:8-jre8 
 
 # Maintainer 
 MAINTAINER "naganjaneyulu4a2@gmail.com" 
-COPY *.jar /
-ENTRYPOINT ["java","-jar","/my-app-1.0-SNAPSHOT.jar"]
+COPY ./webapp.war /usr/local/tomcat/webapps]
