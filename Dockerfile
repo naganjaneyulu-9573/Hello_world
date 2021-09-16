@@ -3,5 +3,5 @@ FROM tomcat:8.0
 
 # Maintainer 
 MAINTAINER "naganjaneyulu4a2@gmail.com" 
-COPY *.war /usr/local/tomcat/webapps]
+COPY *.war /usr/local/tomcat/webapps/webapp.war]
 CMD ["catalina.sh", "run"]
