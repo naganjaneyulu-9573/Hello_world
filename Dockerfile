@@ -1,5 +1,5 @@
 # Pull base image 
-From openjdk 
+FROM openjdk
 
 # Maintainer 
 MAINTAINER "naganjaneyulu4a2@gmail.com" 
